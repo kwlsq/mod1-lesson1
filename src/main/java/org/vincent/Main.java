@@ -89,7 +89,6 @@ public class Main {
 
         exercise2Output(5);
 
-
         calculateTriangleAngle(80,65);
 
         calculateDateDifference("2024-03-19","2024-03-21");
