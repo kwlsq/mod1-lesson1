@@ -11,7 +11,10 @@ public class Main {
     static double PHI = 3.14159;
     //Exercise 1
     public static void calculateRectangleArea(int rectangleLength, int rectangleWidth){
-        System.out.println(rectangleLength*rectangleWidth);
+        System.out.println("Exercise 1: " +
+                "\n" + "length = " + rectangleLength +
+                "\n" + "width = " + rectangleWidth + "\n" +
+                "area = " +rectangleLength*rectangleWidth);
     }
 
     //Exercise 2
@@ -53,6 +56,7 @@ public class Main {
 
     public static void main(String[] args) {
         calculateRectangleArea(5,3);
+
 
         calculateCircleDiameter(5);
         calculateCircleCircumference(5);
