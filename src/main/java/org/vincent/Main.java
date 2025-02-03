@@ -45,7 +45,13 @@ public class Main {
 
     //Exercise 3
     public static void calculateTriangleAngle(int firstAngle, int secondAngle){
-        System.out.println(180-(firstAngle+secondAngle));
+        int thirdAngle = (180-(firstAngle+secondAngle));
+        System.out.println("Exercise 3: " +
+                "\n" + "first angle = " + firstAngle +
+                "\n" + "second angle = " + secondAngle +
+                "\n" + "third angle = " + thirdAngle +
+                "\n"
+        );
     }
 
     //Exercise 4
