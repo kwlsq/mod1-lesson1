@@ -13,21 +13,34 @@ public class Main {
     public static void calculateRectangleArea(int rectangleLength, int rectangleWidth){
         System.out.println("Exercise 1: " +
                 "\n" + "length = " + rectangleLength +
-                "\n" + "width = " + rectangleWidth + "\n" +
-                "area = " +rectangleLength*rectangleWidth);
+                "\n" + "width = " + rectangleWidth +
+                "\n" + "area = " + (rectangleLength * rectangleWidth) +
+                "\n"
+        );
     }
 
     //Exercise 2
-    public static void calculateCircleDiameter(int circleRadius){
-        System.out.println(circleRadius*2);
+    public static int calculateCircleDiameter(int circleRadius){
+        return(circleRadius*2);
     }
 
-    public static void calculateCircleCircumference(int circleRadius){
-        System.out.println(2*PHI*circleRadius);
+    public static double calculateCircleCircumference(int circleRadius){
+        return(2*PHI*circleRadius);
     }
 
-    public static void calculateCircleArea(int circleRadius){
-        System.out.println(PHI*(pow(circleRadius,2)));
+    public static double calculateCircleArea(int circleRadius){
+        return(PHI*(pow(circleRadius,2)));
+    }
+
+    public static void exercise2Output(int circleRadius){
+        System.out.println("Exercise 2: " +
+                "\n" + "radius = " + circleRadius +
+                "\n" + "phi = " + PHI +
+                "\n" +"diameter = " + calculateCircleDiameter(circleRadius) +
+                "\n" +"circumference = " + calculateCircleCircumference(circleRadius) +
+                "\n" +"area = " + calculateCircleArea(circleRadius) +
+                "\n"
+        );
     }
 
     //Exercise 3
@@ -57,10 +70,8 @@ public class Main {
     public static void main(String[] args) {
         calculateRectangleArea(5,3);
 
+        exercise2Output(5);
 
-        calculateCircleDiameter(5);
-        calculateCircleCircumference(5);
-        calculateCircleArea(5);
 
         calculateTriangleAngle(80,65);
 
