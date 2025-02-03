@@ -77,7 +77,11 @@ public class Main {
             initials.append(brokeDownName.charAt(0));
         }
 
-        System.out.println(initials);
+        System.out.println("Exercise 5: " +
+                "\n" + "full name = " + fullName +
+                "\n" + "initial = " + initials +
+                "\n"
+        );
     }
 
     public static void main(String[] args) {
